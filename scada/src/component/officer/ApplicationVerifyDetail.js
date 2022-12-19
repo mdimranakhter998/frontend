@@ -39,7 +39,7 @@ export function ApplicationVerifyDetail() {
         form1.append("is_verified",true)
        await updateApplication(form1)
        await createVerify(form)      
-      navigate('/application/verify')
+      navigate('/officer/dashboard')
     }       
     }
     const handleDefect=async ()=>{
@@ -58,7 +58,7 @@ export function ApplicationVerifyDetail() {
             form1.append("is_submited",false)            
             await updateApplication(form1)
             await createVerify(form)      
-           navigate('/application/verify')
+           navigate('/officer/dashboard')
         }       
         }
         const handleReject=async ()=>{
